@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Farm_To_Table</string>
+    <string name="title_activity_track_order">TrackOrder</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

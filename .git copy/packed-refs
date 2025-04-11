@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled sorted 
+417d4869285ce16a157d7397919fdf4acac1e84d refs/remotes/origin/Fixing-cart
+5d00fe603c69ef8837426c4b23ca1005321a3e88 refs/remotes/origin/OrderSummary
+eb4f10be240a7199edc1483a3917bdc0a5ef808d refs/remotes/origin/Photo-Confirmation
+0220b455dfdc1f8a2d62141bf2e3bf6c609fb1e0 refs/remotes/origin/direction-fix
+25aeaea4521ed8523c5f09ee3f36fd33f02159d9 refs/remotes/origin/fix-payment
+7d90473ff44b94046b5a3fbc204c5fec22f3b00c refs/remotes/origin/fixing-photo
+7e6284e2e60a93c837d6b4292d8eae16204dd131 refs/remotes/origin/main
+7f855cf85f77fa5940943863d0df5ea949c2bf23 refs/remotes/origin/map-view
+df7ecfc83a9fe21eeb79218fa0ac25d875c1de6d refs/remotes/origin/payment-system
+8c6c49d12172106131697c5e92fbdbae724bf759 refs/remotes/origin/search-view
+2330275518ab30c74c32374ee753b28bad4b0d92 refs/remotes/origin/styling

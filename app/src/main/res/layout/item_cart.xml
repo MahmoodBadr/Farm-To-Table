@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Product Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Product Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btn_remove"
+            app:layout_constraintStart_toEndOf="@+id/iv_product_image"
+            app:layout_constraintTop_toTopOf="@+id/iv_product_image" />
+
+        <!-- Farm Name -->
+        <TextView
+            android:id="@+id/tv_farm_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="From: Farm Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_product_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_name" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="$0.00"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_farm_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_farm_name" />
+
+        <!-- Remove Button -->
+        <ImageButton
+            android:id="@+id/btn_remove"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="@android:color/holo_red_dark"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Remove Item"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Quantity Controls -->
+        <LinearLayout
+            android:id="@+id/quantity_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/iv_product_image"
+            app:layout_constraintTop_toBottomOf="@+id/iv_product_image">
+
+            <ImageButton
+                android:id="@+id/btn_decrease"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="8dp"
+                android:scaleX="1.8"
+                android:scaleY="1.8"
+                android:layout_marginStart="16dp"
+                android:tint="@android:color/holo_blue_dark"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Decrease Quantity"
+                android:src="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:scaleX="1.6"
+                android:scaleY="1.6"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_increase"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="8dp"
+                android:scaleX="1.8"
+                android:scaleY="1.8"
+
+                android:tint="@android:color/holo_blue_dark"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Increase Quantity"
+                android:src="@drawable/ic_plus" />
+        </LinearLayout>
+
+        <!-- Item Total -->
+        <TextView
+            android:id="@+id/tv_item_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/quantity_controls"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/quantity_controls" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

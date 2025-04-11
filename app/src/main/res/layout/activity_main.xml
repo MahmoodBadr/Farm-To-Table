@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/product"
+        android:layout_width="235dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/farm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/product" />
+
+    <TextView
+        android:id="@+id/farm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="24dp"
+        android:text="Farm-To-Table"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/motto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="44dp"
+        android:capitalize="sentences"
+        android:text='"From our farm to your table"'
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="45dp"
+        android:text="Create account"
+        app:layout_constraintBottom_toTopOf="@+id/haveaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/haveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="198dp"
+        android:text="I have an account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
