@@ -1,5 +1,7 @@
 # Farm To Table Android App
 
+<img width="98" height="204" alt="Picture1" src="https://github.com/user-attachments/assets/724412d3-6183-44fa-9835-a17aa034c41d" />
+
 **Technologies:** Java, Android Studio, Firebase, Google Maps API  
 
 ## Overview
@@ -14,7 +16,10 @@ The **Farm To Table** Android app connects local farmers with consumers, allowin
 - **Maps Integration:** Google Maps API used for accurate location tracking and route display  
 
 ## Screenshots
-*To be added later*  
+<img width="100" height="212" alt="Picture2" src="https://github.com/user-attachments/assets/663e959d-8f74-4a6a-9b2a-02cdd10b1bcb" />
+<img width="98" height="204" alt="Picture3" src="https://github.com/user-attachments/assets/11465950-8deb-4f6c-b568-2b95b6383c6e" />
+<img width="87" height="180" alt="Picture4" src="https://github.com/user-attachments/assets/a1b14323-ce1b-473f-b988-f0763d671ab6" />
+
 
 ## Installation
 1. Clone the repository:  
